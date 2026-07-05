@@ -30,6 +30,7 @@ public class AnalyticsController {
         return ResponseEntity.ok(analyticsService.getMonthlyPnl(userId));
     }
 
+
     @GetMapping("/by-setup")
     public ResponseEntity<List<SetupPerformanceDTO>> getSetupPerformance(
             @RequestHeader("Authorization") String authHeader) {
